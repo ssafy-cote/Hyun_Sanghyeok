@@ -11,13 +11,13 @@ class Solution {
         
         int[] answers = new int[progresses.length];
         int answerIndex = 0;
-        int last = 0;
+        int current = 0;
         while(!queue.isEmpty()) {
-            last = queue.peek();
+            current = queue.peek();
             
             // 출시할 수 있는 기능들 한번에 출시
             int count = 0;
-            while(!queue.isEmpty() && queue.peek() <= last) {
+            while(!queue.isEmpty() && queue.peek() <= current) {
                 queue.poll();
                 count++;
             }
