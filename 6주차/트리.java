@@ -12,7 +12,6 @@ import java.util.StringTokenizer;
 public class 트리 {
 
     static class Node {
-
         int prev, current;
 
         public Node(int prev, int current) {
