@@ -39,10 +39,9 @@ public class Main {
         int nextTurnTime = 0;
         char nextTurnDir = 'I'; // dummy
 
-        board[0][0] = 's';
-
         Deque<Position> snake = new ArrayDeque<>();
         snake.offer(new Position(0, 0, 0)); // 뱀 init
+        board[0][0] = 's';
 
         int time = 0;
         while (true) {
